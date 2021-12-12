@@ -1,0 +1,14 @@
+
+{
+  "id": "{49E72361-D23E-44D1-B9F2-8727CC886959}",
+  "name": "SMA Storage",
+  "type": 3,
+  "vendor": "SMA",
+  "aliases": [
+    "SMA Storage"
+  ],
+  "parentRequirements": [],
+  "childRequirements": [],
+  "implemented": [],
+  "prefix": "SMA"
+}
