@@ -123,7 +123,7 @@ class SMAStorage extends Module
      * read & update device registersSMA_UpdateDevice
      * @param bool $applied
      */
-    public function UpdateDevice((bool)$applied = false)
+    public function UpdateDevice($applied = false)
     {
         $this->update = 'device';
         $this->ReadData(SMARegister::device_addresses);
