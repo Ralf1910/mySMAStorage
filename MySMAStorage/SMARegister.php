@@ -73,16 +73,14 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ]
-        ],
-        'sunnyboy' => [
-            30231 => [
-                'name' => 'Power limit',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
             ],
+            40187 => [
+			    'name' => 'BatCapacRtgWh',
+			    'count' => 2,
+			    'type' => 'U32',
+				'format' => 'RAW',
+				'profile' => 'MySMA.Wh'
+            ]
         ]
     ];
 
@@ -217,13 +215,6 @@ class SMARegister
 					    455 => 'Warnung',
 					    16777213 => 'Informationen liegen nicht vor'
 					]
-            ],
-            40187 => [
-			    'name' => 'BatCapacRtgWh',
-			    'count' => 2,
-			    'type' => 'U32',
-				'format' => 'RAW',
-				'profile' => 'MySMA.Wh'
             ]
         ]
     ];
@@ -240,15 +231,6 @@ class SMARegister
                 'format' => 'FIX0',
                 'profile' => 'Watt'
             ]
-        ],
-        'sunnyboy' => [
-		            30775 => [
-		                'name' => 'AC active power across all phases',
-		                'count' => 2,
-		                'type' => 'S32',
-		                'format' => 'FIX0',
-		                'profile' => 'Watt'
-		            ]
         ]
 
     ];
