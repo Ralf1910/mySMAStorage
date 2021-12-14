@@ -289,6 +289,9 @@ class SMAStorage extends Module
     private function _isDay()
     {
 
+		// Hier ist noch ein Bug im Code, daher wird immer ausgelesen
+		return true;
+
           // return true on configuration
         if (!$this->ReadPropertyInteger('daytime')) {
             return true;
