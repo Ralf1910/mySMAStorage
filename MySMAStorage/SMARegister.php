@@ -378,13 +378,6 @@ class SMARegister
                 'type' => 'U32',
                 'format' => 'FIX0',
                 'profile' => 'Watt'
-            ],
-            30837 => [
-                'name' => 'Active power target value',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX0',
-                'profile' => 'Watt'
             ]
         ],
         'sunnyboy' => [
