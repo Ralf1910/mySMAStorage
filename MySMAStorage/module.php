@@ -50,7 +50,7 @@ class SMAStorage extends Module
         $this->RegisterPropertyInteger('port', 502);
         $this->RegisterPropertyInteger('unit_id', 3);
         $this->RegisterPropertyInteger('interval', 60);
-        $this->RegisterPropertyInteger('daytime', 1);
+        $this->RegisterPropertyInteger('daytime', 0);
         $this->RegisterPropertyInteger('interval_current', 60);
 
         // register timers
@@ -123,7 +123,7 @@ class SMAStorage extends Module
      * read & update device registersSMA_UpdateDevice
      * @param bool $applied
      */
-    public function UpdateDevice($applied = false)
+    public function UpdateDevice((bool)$applied = false)
     {
         $this->update = 'device';
         $this->ReadData(SMARegister::device_addresses);
