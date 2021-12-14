@@ -49,9 +49,9 @@ class SMAStorage extends Module
         $this->RegisterPropertyString('ip', '');
         $this->RegisterPropertyInteger('port', 502);
         $this->RegisterPropertyInteger('unit_id', 3);
-        $this->RegisterPropertyInteger('interval', 300);
+        $this->RegisterPropertyInteger('interval', 60);
         $this->RegisterPropertyInteger('daytime', 1);
-        $this->RegisterPropertyInteger('interval_current', 30);
+        $this->RegisterPropertyInteger('interval_current', 60);
 
         // register timers
         $this->RegisterTimer('UpdateData', 0, $this->_getPrefix() . '_UpdateValues($_IPS[\'TARGET\'], false);');
@@ -289,9 +289,7 @@ class SMAStorage extends Module
     private function _isDay()
     {
 
-        return true;
-
-        // return true on configuration
+          // return true on configuration
         if (!$this->ReadPropertyInteger('daytime')) {
             return true;
         }
