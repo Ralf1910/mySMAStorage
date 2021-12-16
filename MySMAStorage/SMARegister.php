@@ -135,42 +135,11 @@ class SMARegister
                 'profile' => 'MySMA.Wh',
                 'archive' => 1 // archive: counter
             ],
-            30775 => [
-                'name' => 'AC active power across all phases',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX0',
-                'profile' => 'Watt',
-                'archive' => 0 // archive: default
-            ],
-            30777 => [
-			                'name' => 'Leistung L1',
-			                'count' => 2,
-			                'type' => 'S32',
-			                'format' => 'FIX0',
-			                'profile' => 'Watt',
-			                'archive' => 0 // archive: default
-            ],
-
-            30795 => [
-                'name' => 'Grid current',
-                'count' => 2,
-                'type' => 'U32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
 
 
             /**
              * Sunny Boy Storage
              */
-            30843 => [
-                'name' => 'BatAmp',
-                'count' => 2,
-                'type' => 'S32',
-                'format' => 'FIX3',
-                'profile' => '~Ampere'
-            ],
             30845 => [
                 'name' => 'Current battery charge status',
                 'count' => 2,
