@@ -143,6 +143,15 @@ class SMARegister
                 'profile' => 'Watt',
                 'archive' => 0 // archive: default
             ],
+            30777 => [
+			                'name' => 'Leistung L1',
+			                'count' => 2,
+			                'type' => 'S32',
+			                'format' => 'FIX0',
+			                'profile' => 'Watt',
+			                'archive' => 0 // archive: default
+            ],
+
             30795 => [
                 'name' => 'Grid current',
                 'count' => 2,
